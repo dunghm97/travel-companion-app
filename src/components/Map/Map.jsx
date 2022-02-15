@@ -9,7 +9,6 @@ import { LocalActivityOutlined } from "@material-ui/icons";
 function Map({ setCoordinates, setBounds, coordinates, places, setChildClicked, weatherData }) {
   const classes = useStyles();
   const Desktop = useMediaQuery("(min-width: 600px)");
-  console.log(weatherData);
   return (
     <div className={classes.mapContainer}>
       <GoogleMapReact
