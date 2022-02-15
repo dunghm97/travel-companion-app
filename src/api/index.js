@@ -29,6 +29,7 @@ export const getPlacesData = async (type, sw, ne) => {
 
 export const getWeatherData = async (lat, lng, places) => {
   try {
+    if(places) {
       const { data } = await axios.get(
         "https://community-open-weather-map.p.rapidapi.com/find",
         {
@@ -45,6 +46,7 @@ export const getWeatherData = async (lat, lng, places) => {
         }
       );
       return data;
+    }
   } catch (err) {
     console.log(err);
   }

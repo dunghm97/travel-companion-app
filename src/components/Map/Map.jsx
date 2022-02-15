@@ -5,7 +5,6 @@ import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined";
 import {Rating} from "@material-ui/lab";
 
 import useStyles from "./styles.js";
-import { LocalActivityOutlined } from "@material-ui/icons";
 function Map({ setCoordinates, setBounds, coordinates, places, setChildClicked, weatherData }) {
   const classes = useStyles();
   const Desktop = useMediaQuery("(min-width: 600px)");
