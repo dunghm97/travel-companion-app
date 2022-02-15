@@ -22,7 +22,7 @@ function App() {
     })
   }, [])
   useEffect(() => {
-    const filteredPlaces = places.filter((place) => {
+    const filteredPlaces = places?.filter((place) => {
       return place.rating > rating
     })
     setFilteredPlaces(filteredPlaces)
